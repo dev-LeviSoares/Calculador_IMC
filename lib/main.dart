@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+
 void main() {
   runApp(
     MaterialApp(
@@ -49,7 +51,7 @@ class _HomeState extends State<Home> {
       } else if(result > 35.0 && result < 39.9) {
         _infoText = "Seu IMC é de (${result.toStringAsPrecision(3)}). Você está com obesidade grau 2.";
       } else if(result > 40.0) {
-        _infoText = "Seu IMC é de (${result.toStringAsPrecision(3)}). Você está com obesidade grau 3(mórbida).";
+        _infoText = "Seu IMC é de (${result.toStringAsPrecision(3)}). Você está com obesidade grau 3 (mórbida).";
       }
     });
   }
@@ -126,7 +128,7 @@ class _HomeState extends State<Home> {
                         borderRadius: BorderRadius.circular(12)
                       ),
                     ),
-                    child: Text("Medir IMC", style: TextStyle( color: Colors.white, fontSize: 15.0))
+                    child: Text("Medir IMC", style: TextStyle( color: Colors.white, fontSize: 12.0))
                   ),
                 ),
                 SizedBox(height: 10),

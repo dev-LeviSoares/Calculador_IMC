@@ -7,7 +7,7 @@ plugins {
 
 android {
     namespace = "com.example.calculadora_imc"
-    compileSdk = flutter.compileSdkVersion
+    compileSdk = 16
     ndkVersion = flutter.ndkVersion
 
     compileOptions {
